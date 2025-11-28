@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+int a[4], b[4], p[4];
+int x;
+
+printf("!!!!!!TEMOS UM INIMIGO E PRECISAMOS DERROTALO!!!!!!\\n");
+printf("\\nPara isso preciso que você siga as intruções abaixo para derrotamos ele juntos!\\n");
+
+    printf("\\nDigite 4 valores de dano para (a), um em baixo do outro!:\\n");
+    for(x = 0; x < 4; x++){
+        scanf("%d", &a[x]);
+    }
+    printf("Digite 4 valores de bônus para (b), um em baixo do outro!:\\n");
+    for(x = 0; x < 4; x++){
+        scanf("%d", &b[x]);
+    }
+    for(x = 0; x < 4; x++){
+        p[x] = a[x] * b[x];
+    }
+    printf("\\nO resultado do dano multiplicado em (p) é:\\n");
+    for(x = 0; x < 4; x++){
+        printf("%d", p[x]);
+    }
+     printf("\\nO INIMIGO FOI DERROTADO! VITORIA!");
+return 0;
+}
