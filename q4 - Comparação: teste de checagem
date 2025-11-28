@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(){
+int p[5], b[5];
+int x, iguais = 1;
+printf("Bora verificar esses vetores aqui ;)\\n");
+
+    printf("\\nDigite 5 valores para (a), um em baixo do outro!:\\n");
+    for(x = 0; x < 5; x++){
+        scanf("%d", &p[x]);
+    }
+    printf("Digite 5 valores de para (b), um em baixo do outro!:\\n");
+    for(x = 0; x < 5; x++){
+        scanf("%d", &b[x]);
+    }
+    for(x = 0; x < 4; x++){
+       if(p[x] != b[x]);
+        iguais = 0;
+        break;
+    }
+
+   if(iguais){
+       printf("\\nReplay perfeito: os vetores são iguais!\\n");
+   }else{
+       printf("\\nReplay desincronizado: os vetores são diferentes!\\n");
+   }
+return 0;
+}
